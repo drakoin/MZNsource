@@ -2582,9 +2582,9 @@ bool LoadBlockIndex(bool fAllowNew)
         if (!fAllowNew)
             return false;
 
-        const char* pszTimestamp = "http://edition.cnn.com/2014/10/05/world/asia/japan-typhoon-phanfone/index.html";
+        const char* pszTimestamp = "http://derstandard.at/2000008993656/Erster-Testflug-fuer-Marsraumschiff-Orion-Beginn-einer-neuen-Aera";
         CTransaction txNew;
-        txNew.nTime = 1412570028;
+        txNew.nTime = 1417871321;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
